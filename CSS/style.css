@@ -5,6 +5,10 @@
     gap: 0;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 body{ 
     height: 100vh;
     background: #ffffff;
@@ -13,10 +17,122 @@ body{
 header{
     background: #f4e4dc;
     display: flex;
-    height: 3rem;
+    height: 8vh;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     padding-left: 4rem;
     padding-right: 4rem;
+    gap: 1rem;
+}
+
+.logo{
+    width: 19rem;
+    z-index: 1;
+}
+
+.overzicht {
+    margin-left: auto;
+    font-size: medium;
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.overzicht2{
+    font-size: medium;
+    font-family: 'PT Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.frontPic{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    width: 100vw;
+    height: 90vh;
+    background: url("../img/skating.webp");
+    background-size: cover;
+}
+
+.Slogan{
+    font-size: xx-large;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family:'PT Sans', sans-serif;
+    color:#000000;
+    grid-column: 2/ 5;
+    grid-row: 3/ 7;
+}
+
+.Slogan__deel2{
+    font-size: xx-large;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family:'PT Sans', sans-serif;
+    color:#0a0a0a;
+    grid-column: 2/ 6;
+    grid-row: 5/ 9;
+}
+
+.CTA{
+    grid-column: 2/ 3;
+    grid-row: 7/ 8;
+    border:none;
+    border-radius: 10%;
+    background: #f4e4dc;
+}
+.CTA:hover{
+    cursor: pointer;
+}
+
+
+
+.info-section{
+    height: 130vh;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+
+.Pizza__SkateBoard{
+    grid-column: 2/ 6;
+    grid-row: 2/7;
+}
+
+.Hawaii_Text{
+    font-family:'PT Sans', sans-serif;
+    font-size: xx-large;
+    grid-column: 8/ 11;
+    grid-row: 3/ 5;
+}
+
+.Hawaii_Info1{
+    font-family:'PT Sans', sans-serif;
+    font-size: medium;
+    grid-column: 8/11;
+    grid-row: 4/ 5;
+}
+
+.Hawaii_Info2{
+    font-family:'PT Sans', sans-serif;
+    font-size: medium;
+    grid-column: 8/ 11;
+    grid-row: 5/ 6;
+}
+
+.Hawaii_Info3{
+    font-family:'PT Sans', sans-serif;
+    font-size: medium;
+    grid-column: 8/ 11;
+    grid-row: 6/ 9;
+}
+
+.Hawaii_pizza_Info{
+    border:none;
+    border-radius: 10%;
+    background: #f4e4dc;
+    grid-column: 8/10;
+    grid-row: 6/7;
 }
